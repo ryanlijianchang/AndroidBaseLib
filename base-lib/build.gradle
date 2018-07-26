@@ -28,13 +28,34 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'com.android.support:appcompat-v7:28.0.0-alpha3'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    compile rootProject.ext.dependencies["constraint-layout"]
+
+    compile rootProject.ext.dependencies["android-support-v4"]
+    compile rootProject.ext.dependencies["android-support-appcompat-v7"]
+    compile rootProject.ext.dependencies["android-support-annotations"]
+    compile rootProject.ext.dependencies["android-support-recyclerview-v7"]
+    compile rootProject.ext.dependencies["android-support-design"]
+
+    compile (rootProject.ext.dependencies["fresco-sdk"]) {
+        exclude module: 'library'
+    }
+    compile (rootProject.ext.dependencies["fresco-imagepipeline-okhttp3"]){
+        exclude group: 'com.nineoldandroids', module: 'library'
+    }
+    // For WebP support, including animated WebP
+    compile (rootProject.ext.dependencies["fresco-animated-webp"]){
+        exclude group: 'com.nineoldandroids', module: 'library'
+    }
+    compile (rootProject.ext.dependencies["fresco-webpsupport"]) {
+        exclude group: 'com.nineoldandroids', module: 'library'
+    }
+
+
 }
+
+
+
 
 //important
 Properties properties = new Properties()

@@ -1,0 +1,27 @@
+//说明
+//本文件用来放第三方引用库，版本库等
+
+ext {
+    //版本号
+    version = [
+            androidSupportLibVersion    : "27.0.2",
+            frescoSdkVersion            : "1.9.0"
+    ]
+
+    dependencies = [
+            //fresco
+            "fresco-sdk"                        : "com.facebook.fresco:fresco:${version["frescoSdkVersion"]}",
+            "fresco-imagepipeline-okhttp3"      : "com.facebook.fresco:imagepipeline-okhttp3:${version["frescoSdkVersion"]}",
+            "fresco-animated-webp"              : "com.facebook.fresco:animated-webp:${version["frescoSdkVersion"]}",
+            "fresco-webpsupport"                : "com.facebook.fresco:webpsupport:${version["frescoSdkVersion"]}",
+
+            "constraint-layout"                 : "com.android.support.constraint:constraint-layout:1.1.2",
+
+            //android support library
+            "android-support-v4"                : "com.android.support:support-v4:${version["androidSupportLibVersion"]}",
+            "android-support-annotations"       : "com.android.support:support-annotations:${version["androidSupportLibVersion"]}",
+            "android-support-design"            : "com.android.support:design:${version["androidSupportLibVersion"]}",
+            "android-support-recyclerview-v7"   : "com.android.support:recyclerview-v7:${version["androidSupportLibVersion"]}",
+            "android-support-appcompat-v7"      : "com.android.support:appcompat-v7:${version["androidSupportLibVersion"]}",
+    ]
+}
