@@ -1,4 +1,4 @@
-package com.ryan.base_lib.widget;
+package com.ryan.baselib.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -8,7 +8,7 @@ import com.facebook.drawee.drawable.ScalingUtils;
 import com.facebook.drawee.generic.GenericDraweeHierarchy;
 import com.facebook.drawee.generic.RoundingParams;
 import com.facebook.drawee.view.SimpleDraweeView;
-import com.ryan.base_lib.R;
+import com.ryan.baselib.R;
 
 public class FrescoAvatar extends SimpleDraweeView {
     private int mDefaultAvatarRes;
