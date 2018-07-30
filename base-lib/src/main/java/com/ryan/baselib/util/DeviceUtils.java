@@ -8,7 +8,7 @@ import android.os.Build;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-public class DeviceUtil {
+public class DeviceUtils {
     /**
      * 总内存，MB
      */
