@@ -6,14 +6,14 @@ import android.graphics.Matrix;
 
 public class BitmapUtils {
 
-    public Bitmap decodeResToBitmap(int resId) {
+    public static Bitmap decodeResToBitmap(int resId) {
         if (resId <= 0) {
             return null;
         }
         return BitmapFactory.decodeResource(AppUtils.getContext().getResources(), resId);
     }
 
-    public Bitmap decodeResToBitmap(int resId, int newWidth, int newHeight) {
+    public static Bitmap decodeResToBitmap(int resId, int newWidth, int newHeight) {
         if (resId <= 0) {
             return null;
         }
