@@ -23,5 +23,7 @@ ext {
             "android-support-design"            : "com.android.support:design:${version["androidSupportLibVersion"]}",
             "android-support-recyclerview-v7"   : "com.android.support:recyclerview-v7:${version["androidSupportLibVersion"]}",
             "android-support-appcompat-v7"      : "com.android.support:appcompat-v7:${version["androidSupportLibVersion"]}",
+            "com.android.support:cardview-v7"   : "com.android.support:cardview-v7:${version["androidSupportLibVersion"]}",
+
     ]
 }
