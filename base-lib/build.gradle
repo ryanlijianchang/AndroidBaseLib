@@ -39,6 +39,8 @@ dependencies {
     api rootProject.ext.dependencies["android-support-annotations"]
     api rootProject.ext.dependencies["android-support-recyclerview-v7"]
     api rootProject.ext.dependencies["android-support-design"]
+    api rootProject.ext.dependencies["com.android.support:cardview-v7"]
+
 
     api (rootProject.ext.dependencies["fresco-sdk"]) {
         exclude module: 'library'
@@ -96,7 +98,7 @@ artifacts {
 Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
-version = "0.0.2"//发布的library的版本号,这个比较关键！！！
+version = "0.0.3"//发布的library的版本号,这个比较关键！！！
 
 
 def siteUrl = 'https://github.com/ryanlijianchang/AndroidBaseLib'      // 项目的主页(可随意，建议填library的github地址)
