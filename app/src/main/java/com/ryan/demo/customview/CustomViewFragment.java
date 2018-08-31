@@ -10,20 +10,14 @@ import android.view.ViewGroup;
 import com.ryan.androidbaselib.R;
 
 public class CustomViewFragment extends Fragment {
-    public static final String TAG_CUSTOM_VIEEW = "tag_custom_view";
-    public static final String TAG_UTILS = "tag_utils";
-    public static final String TAG_DEFAULT = "tag_default";
-
-    private String mTag = "";
 
 
     public CustomViewFragment() {
     }
 
-    public static CustomViewFragment newInstance(String fragmentName) {
+    public static CustomViewFragment newInstance() {
         CustomViewFragment fragment = new CustomViewFragment();
         Bundle args = new Bundle();
-        args.putString("mTag", fragmentName);
         fragment.setArguments(args);
         return fragment;
     }
@@ -32,9 +26,6 @@ public class CustomViewFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if (getArguments() != null) {
-            mTag = getArguments().getString("mTag");
-        }
     }
 
     @Override

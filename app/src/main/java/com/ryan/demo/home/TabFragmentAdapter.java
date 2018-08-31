@@ -5,8 +5,9 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.ryan.baselib.util.ListUtils;
-import com.ryan.common.data.HomeDataSource;
+import com.ryan.common.data.DataSource;
 import com.ryan.demo.customview.CustomViewFragment;
+import com.ryan.demo.utils.UtilsFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,10 +34,10 @@ public class TabFragmentAdapter extends FragmentStatePagerAdapter {
         if (mCurFragment == null) {
             switch (position) {
                 case 0:
-                    mCurFragment = new CustomViewFragment();
+                    mCurFragment = CustomViewFragment.newInstance();
                     break;
                 case 1:
-                    mCurFragment = new CustomViewFragment();
+                    mCurFragment = UtilsFragment.newInstance();
                     break;
                 default:
                     break;
@@ -50,7 +51,7 @@ public class TabFragmentAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public int getCount() {
-        List<String> mTitles = HomeDataSource.getHomeTags();
+        List<String> mTitles = DataSource.getHomeTags();
         return ListUtils.isEmpty(mTitles) ? 0 : mTitles.size();
     }
 }

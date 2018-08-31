@@ -6,4 +6,10 @@
         <item>@string/utils</item>
     </string-array>
 
+    <!--UtilsFragment对应的TAG-->
+    <string-array name="array_utils_tags">
+        <item>DensityUtils</item>
+        <item>BitmapUtils</item>
+    </string-array>
+
 </resources>

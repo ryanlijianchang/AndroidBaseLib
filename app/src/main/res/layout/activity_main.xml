@@ -8,7 +8,7 @@
         android:id="@+id/tab_main"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:background="#EF7062"
+        android:background="@color/colorPrimary"
         app:layout_constraintRight_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:tabGravity="center"
@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="45dp"
-        android:background="#ffffff"
+        android:background="#999e9e9e"
         app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

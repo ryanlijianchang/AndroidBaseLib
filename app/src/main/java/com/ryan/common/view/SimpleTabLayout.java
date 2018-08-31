@@ -13,7 +13,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.ryan.androidbaselib.R;
-import com.ryan.common.data.HomeDataSource;
+import com.ryan.common.data.DataSource;
 import com.ryan.common.wrapper.OnTabSelectedListenerWrapper;
 
 import java.util.List;
@@ -97,7 +97,7 @@ public class SimpleTabLayout extends TabLayout {
     }
 
     private View getTabView(int currentPosition) {
-        List<String> mTitles = HomeDataSource.getHomeTags();
+        List<String> mTitles = DataSource.getHomeTags();
         View view = LayoutInflater.from(getContext()).inflate(R.layout.layout_simple_tab_layout_tab, null);
         TextView textView = view.findViewById(R.id.tab_simple_tab_layout);
         textView.setText(mTitles.get(currentPosition));
