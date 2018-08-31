@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Android代码库</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="custom_view">自定义View</string>
+    <string name="utils">工具类</string>
+</resources>
