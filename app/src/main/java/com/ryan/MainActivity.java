@@ -1,25 +1,26 @@
 package com.ryan;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
 
 import com.ryan.androidbaselib.R;
+import com.ryan.view.SimpleTabLayout;
 
+/**
+ * @author RyanLee
+ */
 public class MainActivity extends AppCompatActivity {
-    private RecyclerView mRecyclerView;
-    private MainRecyclerAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mRecyclerView = findViewById(R.id.rv_main_list);
-        mAdapter = new MainRecyclerAdapter();
+        SimpleTabLayout mTab = findViewById(R.id.tab_main);
+        ViewPager mViewPager = findViewById(R.id.vp_main);
 
-        mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
-        mRecyclerView.setAdapter(mAdapter);
+        mViewPager.setAdapter(new TabFragmentAdapter(getSupportFragmentManager()));
+        mTab.setupWithViewPager(mViewPager);
     }
 }
