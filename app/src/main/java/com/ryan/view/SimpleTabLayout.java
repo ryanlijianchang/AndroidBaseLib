@@ -18,6 +18,9 @@ import com.ryan.wrapper.OnTabSelectedListenerWrapper;
 
 import java.util.List;
 
+/**
+ * @author RyanLee
+ */
 public class SimpleTabLayout extends TabLayout {
     public SimpleTabLayout(Context context) {
         this(context, null);

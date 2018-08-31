@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--首页TAG-->
     <string-array name="array_home_tags">
         <item>@string/custom_view</item>
         <item>@string/utils</item>
-
     </string-array>
 
 </resources>

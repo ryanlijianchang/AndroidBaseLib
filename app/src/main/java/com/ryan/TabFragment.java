@@ -14,7 +14,7 @@ public class TabFragment extends Fragment {
     public static final String TAG_UTILS = "tag_utils";
     public static final String TAG_DEFAULT = "tag_default";
 
-    private String mName = "";
+    private String mTag = "";
 
 
     public TabFragment() {
@@ -23,7 +23,7 @@ public class TabFragment extends Fragment {
     public static TabFragment newInstance(String fragmentName) {
         TabFragment fragment = new TabFragment();
         Bundle args = new Bundle();
-        args.putString("fragmentName", fragmentName);
+        args.putString("mTag", fragmentName);
         fragment.setArguments(args);
         return fragment;
     }
@@ -33,7 +33,7 @@ public class TabFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         if (getArguments() != null) {
-            mName = getArguments().getString("fragmentName");
+            mTag = getArguments().getString("mTag");
         }
     }
 
