@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.ryan.view.SimpleTabLayout
+    <com.ryan.common.view.SimpleTabLayout
         android:id="@+id/tab_main"
         android:layout_width="match_parent"
         android:layout_height="45dp"

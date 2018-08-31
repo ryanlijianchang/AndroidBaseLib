@@ -1,4 +1,4 @@
-package com.ryan.data;
+package com.ryan.common.data;
 
 import com.ryan.androidbaselib.R;
 import com.ryan.baselib.util.AppUtils;

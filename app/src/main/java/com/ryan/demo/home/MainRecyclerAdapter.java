@@ -1,11 +1,10 @@
-package com.ryan;
+package com.ryan.demo.home;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 
 import com.ryan.androidbaselib.R;
 import com.ryan.baselib.util.AppUtils;

@@ -1,4 +1,4 @@
-package com.ryan.app;
+package com.ryan.common.app;
 
 import android.app.Application;
 

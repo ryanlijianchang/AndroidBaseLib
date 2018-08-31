@@ -1,4 +1,4 @@
-package com.ryan.view;
+package com.ryan.common.view;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -13,8 +13,8 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.ryan.androidbaselib.R;
-import com.ryan.data.HomeDataSource;
-import com.ryan.wrapper.OnTabSelectedListenerWrapper;
+import com.ryan.common.data.HomeDataSource;
+import com.ryan.common.wrapper.OnTabSelectedListenerWrapper;
 
 import java.util.List;
 

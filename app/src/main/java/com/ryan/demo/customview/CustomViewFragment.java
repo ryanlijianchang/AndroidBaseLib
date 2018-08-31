@@ -1,4 +1,4 @@
-package com.ryan;
+package com.ryan.demo.customview;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 
 import com.ryan.androidbaselib.R;
 
-public class TabFragment extends Fragment {
+public class CustomViewFragment extends Fragment {
     public static final String TAG_CUSTOM_VIEEW = "tag_custom_view";
     public static final String TAG_UTILS = "tag_utils";
     public static final String TAG_DEFAULT = "tag_default";
@@ -17,11 +17,11 @@ public class TabFragment extends Fragment {
     private String mTag = "";
 
 
-    public TabFragment() {
+    public CustomViewFragment() {
     }
 
-    public static TabFragment newInstance(String fragmentName) {
-        TabFragment fragment = new TabFragment();
+    public static CustomViewFragment newInstance(String fragmentName) {
+        CustomViewFragment fragment = new CustomViewFragment();
         Bundle args = new Bundle();
         args.putString("mTag", fragmentName);
         fragment.setArguments(args);
@@ -40,6 +40,6 @@ public class TabFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_tab, container, false);
+        return inflater.inflate(R.layout.fragment_custom_view, container, false);
     }
 }

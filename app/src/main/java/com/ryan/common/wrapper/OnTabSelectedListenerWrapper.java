@@ -1,4 +1,4 @@
-package com.ryan.wrapper;
+package com.ryan.common.wrapper;
 
 import android.support.design.widget.TabLayout;
 
