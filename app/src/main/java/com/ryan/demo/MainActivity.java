@@ -1,4 +1,4 @@
-package com.ryan.demo.home;
+package com.ryan.demo;
 
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;

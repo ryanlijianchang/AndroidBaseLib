@@ -9,7 +9,7 @@
     <!--UtilsFragment对应的TAG-->
     <string-array name="array_utils_tags">
         <item>DensityUtils</item>
-        <item>BitmapUtils</item>
+        <item>TelephonyUtils</item>
     </string-array>
 
 </resources>

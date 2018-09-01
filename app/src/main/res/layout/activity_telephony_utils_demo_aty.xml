@@ -7,11 +7,11 @@
     tools:context="com.ryan.demo.utils.sub.DensityUtilsDemoAty">
 
     <include
-        android:id="@+id/toolbar_density_utils"
+        android:id="@+id/toolbar_telephony_utils"
         layout="@layout/toolbar_common" />
 
     <TextView
-        android:id="@+id/tv_density_utils"
+        android:id="@+id/tv_telephony_utils"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:gravity="center_vertical"
@@ -19,5 +19,5 @@
         android:textColor="@color/color_text"
         android:textSize="@dimen/sp14"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar_density_utils" />
+        app:layout_constraintTop_toBottomOf="@id/toolbar_telephony_utils" />
 </android.support.constraint.ConstraintLayout>

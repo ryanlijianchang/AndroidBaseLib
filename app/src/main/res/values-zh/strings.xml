@@ -7,7 +7,10 @@
     <string name="screen_width">屏幕宽度：</string>
     <string name="screen_height">屏幕高度：</string>
     <string name="pixel">像素</string>
-    <string name="screen_density">屏幕密度:</string>
-    <string name="screen_density_dpi">单位屏幕密度:</string>
-    <string name="screen_scaled_density">屏幕密度（和手机字体大小有关）:</string>
+    <string name="screen_density">屏幕密度：</string>
+    <string name="screen_density_dpi">单位屏幕密度：</string>
+    <string name="screen_scaled_density">屏幕密度（和手机字体大小有关）：</string>
+
+    <string name="imei">IMEI：</string>
+    <string name="imsi">IMSI：</string>
 </resources>

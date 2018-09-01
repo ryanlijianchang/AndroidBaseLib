@@ -11,5 +11,9 @@
     <string name="screen_density_dpi">DensityDpi:</string>
     <string name="screen_scaled_density">ScaledDensity:</string>
 
+    <string name="imei">IMEI:</string>
+    <string name="imsi">IMSI:</string>
+
+
 
 </resources>

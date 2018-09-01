@@ -1,19 +1,18 @@
 package com.ryan.demo.utils.sub;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 
 import com.ryan.androidbaselib.R;
-import com.ryan.baselib.util.AppUtils;
 import com.ryan.baselib.util.DensityUtils;
 import com.ryan.baselib.util.ResourceUtils;
+import com.ryan.common.base.BaseActivity;
 
 /**
  * @author RyanLee
  */
-public class DensityUtilsDemoAty extends AppCompatActivity {
+public class DensityUtilsDemoAty extends BaseActivity {
     private Toolbar mToolbar;
     private TextView mContent;
 
@@ -23,10 +22,9 @@ public class DensityUtilsDemoAty extends AppCompatActivity {
         setContentView(R.layout.activity_density_utils_demo_aty);
 
         mToolbar = findViewById(R.id.toolbar_density_utils);
-        mToolbar.setTitle("DensityUtilsDemoAty");
-        setSupportActionBar(mToolbar);
-
         mContent = findViewById(R.id.tv_density_utils);
+
+        setUpToolbar(mToolbar);
 
         String stringBuilder = ResourceUtils.getString(R.string.screen_width) +
                 DensityUtils.getScreenWidth() +

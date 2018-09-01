@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/icon_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.ryan.demo.home.MainActivity">
+        <activity android:name="com.ryan.demo.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,6 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.ryan.demo.utils.sub.DensityUtilsDemoAty" />
+        <activity android:name="com.ryan.demo.utils.sub.TelephonyUtilsDemoAty"></activity>
     </application>
 
 </manifest>

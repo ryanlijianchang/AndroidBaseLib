@@ -6,4 +6,20 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+
+    <style name="toolbar_blue_theme" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="title_text_theme" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+
 </resources>

@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import com.ryan.androidbaselib.R;
 import com.ryan.common.wrapper.OnRecyclerItemClickListener;
 import com.ryan.demo.utils.sub.DensityUtilsDemoAty;
+import com.ryan.demo.utils.sub.TelephonyUtilsDemoAty;
 
 /**
  * @author RyanLee
@@ -56,6 +57,9 @@ public class UtilsFragment extends Fragment implements OnRecyclerItemClickListen
         switch (position) {
             case 0:
                 startActivity(new Intent(getActivity(), DensityUtilsDemoAty.class));
+                break;
+            case 1:
+                startActivity(new Intent(getActivity(), TelephonyUtilsDemoAty.class));
                 break;
             default:
                 break;
