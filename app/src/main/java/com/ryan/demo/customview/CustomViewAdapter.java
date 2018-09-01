@@ -1,4 +1,4 @@
-package com.ryan.demo.utils;
+package com.ryan.demo.customview;
 
 import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
@@ -16,27 +16,23 @@ import com.ryan.common.wrapper.OnRecyclerItemClickListener;
 
 import java.util.List;
 
-/**
- * UtilsFragment的RecyclerViewAdapter
- * @author RyanLee
- */
-public class UtilsRecyclerAdapter extends RecyclerView.Adapter<UtilsRecyclerAdapter.UtilsHolder> {
+public class CustomViewAdapter extends RecyclerView.Adapter<CustomViewAdapter.CustomViewHolder> {
     private List<String> mDatas;
     private OnRecyclerItemClickListener mListener;
 
-    UtilsRecyclerAdapter(OnRecyclerItemClickListener listener) {
-        mDatas = DataSource.getUtilsTags();
-        mListener = listener;
+    public CustomViewAdapter(OnRecyclerItemClickListener listener) {
+        this.mDatas = DataSource.getCustomViewTitles();
+        this.mListener = listener;
     }
 
     @Override
-    public UtilsHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View rootView = LayoutInflater.from(AppUtils.getContext()).inflate(R.layout.item_util_fragment, parent, false);
-        return new UtilsHolder(rootView, mListener);
+    public CustomViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(AppUtils.getContext()).inflate(R.layout.item_custom_fragment, parent, false);
+        return new CustomViewHolder(view, mListener);
     }
 
     @Override
-    public void onBindViewHolder(UtilsHolder holder, int position) {
+    public void onBindViewHolder(CustomViewHolder holder, int position) {
         String name = mDatas.get(position);
         holder.bindView(name);
     }
@@ -46,13 +42,13 @@ public class UtilsRecyclerAdapter extends RecyclerView.Adapter<UtilsRecyclerAdap
         return ListUtils.isEmpty(mDatas) ? 0 : mDatas.size();
     }
 
-    static class UtilsHolder extends RecyclerView.ViewHolder {
+    static class CustomViewHolder extends RecyclerView.ViewHolder {
         private Button mItemName;
         private OnRecyclerItemClickListener mListener;
 
-        UtilsHolder(View itemView, OnRecyclerItemClickListener mListener) {
+        CustomViewHolder(View itemView, OnRecyclerItemClickListener listener) {
             super(itemView);
-            this.mListener = mListener;
+            this.mListener = listener;
             mItemName = itemView.findViewById(R.id.tv_item_utils);
             mItemName.setBackgroundColor(Color.parseColor(ColorDataSource.getRandomMaterialColor()));
         }

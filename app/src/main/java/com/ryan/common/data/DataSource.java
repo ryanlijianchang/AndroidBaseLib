@@ -23,4 +23,13 @@ public class DataSource {
         String[] tagArr = ResourceUtils.getStringArray(R.array.array_utils_tags);
         return new ArrayList<>(Arrays.asList(tagArr));
     }
+
+    /**
+     * CustomViewFragment对应的TAG
+     * @return list
+     */
+    public static List<String> getCustomViewTitles() {
+        String[] tagArr = ResourceUtils.getStringArray(R.array.array_custom_view_tags);
+        return new ArrayList<>(Arrays.asList(tagArr));
+    }
 }

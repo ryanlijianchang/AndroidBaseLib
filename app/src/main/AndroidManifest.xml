@@ -18,7 +18,8 @@
             </intent-filter>
         </activity>
         <activity android:name="com.ryan.demo.utils.sub.DensityUtilsDemoAty" />
-        <activity android:name="com.ryan.demo.utils.sub.TelephonyUtilsDemoAty"></activity>
+        <activity android:name="com.ryan.demo.utils.sub.TelephonyUtilsDemoAty" />
+        <activity android:name="com.ryan.demo.customview.sub.SimpleScrollTextViewDemoAty"></activity>
     </application>
 
 </manifest>

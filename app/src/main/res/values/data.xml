@@ -12,4 +12,9 @@
         <item>TelephonyUtils</item>
     </string-array>
 
+    <!--CustomViewFragment对应的TAG-->
+    <string-array name="array_custom_view_tags">
+        <item>SimpleScrollTextView</item>
+    </string-array>
+
 </resources>

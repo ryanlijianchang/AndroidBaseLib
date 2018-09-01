@@ -13,4 +13,6 @@
 
     <string name="imei">IMEI：</string>
     <string name="imsi">IMSI：</string>
+
+    <string name="str_start">播放</string>
 </resources>
