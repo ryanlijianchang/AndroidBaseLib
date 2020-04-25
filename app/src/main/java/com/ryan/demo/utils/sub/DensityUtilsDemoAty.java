@@ -1,8 +1,9 @@
 package com.ryan.demo.utils.sub;
 
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
+
+import androidx.appcompat.widget.Toolbar;
 
 import com.ryan.androidbaselib.R;
 import com.ryan.baselib.util.DensityUtils;

@@ -1,4 +1,11 @@
-# AndroidBaseLib
+## 版本信息 ##
 
+### V0.0.9 ###
 
-compile 'com.ryan.base-lib:base-lib:0.0.6'
+- 1、支持kotlin
+- 2、增加截图工具类 ScreenShotListenManager
+
+### V0.0.8 ###
+
+- 1、适配Androidx
+- 2、获取系统RAM DeviceUtils.getTotalMemory

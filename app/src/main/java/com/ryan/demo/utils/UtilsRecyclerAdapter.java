@@ -1,17 +1,18 @@
 package com.ryan.demo.utils;
 
 import android.graphics.Color;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.ryan.androidbaselib.R;
 import com.ryan.baselib.util.AppUtils;
 import com.ryan.baselib.util.ListUtils;
 import com.ryan.common.data.ColorDataSource;
-import com.ryan.common.data.DataSource;
+import com.ryan.common.data.DataSourceKt;
 import com.ryan.common.wrapper.OnRecyclerItemClickListener;
 
 import java.util.List;
@@ -25,7 +26,7 @@ public class UtilsRecyclerAdapter extends RecyclerView.Adapter<UtilsRecyclerAdap
     private OnRecyclerItemClickListener mListener;
 
     UtilsRecyclerAdapter(OnRecyclerItemClickListener listener) {
-        mDatas = DataSource.getUtilsTags();
+        mDatas = DataSourceKt.getUtilsTags();
         mListener = listener;
     }
 

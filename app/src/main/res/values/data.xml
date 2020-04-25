@@ -4,17 +4,24 @@
     <string-array name="array_home_tags">
         <item>@string/custom_view</item>
         <item>@string/utils</item>
+        <item>@string/tools</item>
     </string-array>
 
     <!--UtilsFragment对应的TAG-->
     <string-array name="array_utils_tags">
         <item>DensityUtils</item>
         <item>TelephonyUtils</item>
+        <item>DeviceUtils</item>
     </string-array>
 
     <!--CustomViewFragment对应的TAG-->
     <string-array name="array_custom_view_tags">
         <item>SimpleScrollTextView</item>
     </string-array>
+
+    <string-array name="array_tools_tags">
+        <item>ScreenShotListenManager</item>
+    </string-array>
+
 
 </resources>

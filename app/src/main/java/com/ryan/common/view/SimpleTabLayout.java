@@ -3,17 +3,18 @@ package com.ryan.common.view;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Typeface;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
+import androidx.viewpager.widget.ViewPager;
+
+import com.google.android.material.tabs.TabLayout;
 import com.ryan.androidbaselib.R;
-import com.ryan.common.data.DataSource;
+import com.ryan.common.data.DataSourceKt;
 import com.ryan.common.wrapper.OnTabSelectedListenerWrapper;
 
 import java.util.List;
@@ -97,8 +98,8 @@ public class SimpleTabLayout extends TabLayout {
     }
 
     private View getTabView(int currentPosition) {
-        List<String> mTitles = DataSource.getHomeTags();
-        View view = LayoutInflater.from(getContext()).inflate(R.layout.layout_simple_tab_layout_tab, null);
+        List<String> mTitles = DataSourceKt.getHomeTags();
+        View view = LayoutInflater.from(getContext()).inflate(R.layout.layout_simple_tab_layout_tab, this, false);
         TextView textView = view.findViewById(R.id.tab_simple_tab_layout);
         textView.setText(mTitles.get(currentPosition));
         return view;

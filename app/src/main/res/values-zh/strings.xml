@@ -3,6 +3,7 @@
 
     <string name="custom_view">自定义View</string>
     <string name="utils">工具类</string>
+    <string name="tools">道具类</string>
 
     <string name="screen_width">屏幕宽度：</string>
     <string name="screen_height">屏幕高度：</string>

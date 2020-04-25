@@ -1,8 +1,9 @@
 package com.ryan.demo;
 
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import com.ryan.androidbaselib.R;
 import com.ryan.common.view.SimpleTabLayout;

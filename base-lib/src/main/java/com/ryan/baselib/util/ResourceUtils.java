@@ -3,7 +3,8 @@ package com.ryan.baselib.util;
 import android.content.res.AssetManager;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
-import android.support.v4.content.ContextCompat;
+
+import androidx.core.content.ContextCompat;
 
 public class ResourceUtils {
 

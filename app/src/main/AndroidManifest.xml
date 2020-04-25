@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ryan.androidbaselib">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:name="com.ryan.common.app.MyApplication"
         android:allowBackup="true"
@@ -10,6 +13,8 @@
         android:roundIcon="@mipmap/icon_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name="com.ryan.demo.utils.sub.DevicesUtilsDemoAty"></activity>
+        <activity android:name="com.ryan.demo.tools.sub.ScreenShotActivity" />
         <activity android:name="com.ryan.demo.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,7 +24,7 @@
         </activity>
         <activity android:name="com.ryan.demo.utils.sub.DensityUtilsDemoAty" />
         <activity android:name="com.ryan.demo.utils.sub.TelephonyUtilsDemoAty" />
-        <activity android:name="com.ryan.demo.customview.sub.SimpleScrollTextViewDemoAty"></activity>
+        <activity android:name="com.ryan.demo.customview.sub.SimpleScrollTextViewDemoAty" />
     </application>
 
 </manifest>

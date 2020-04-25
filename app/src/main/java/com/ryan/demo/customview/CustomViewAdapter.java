@@ -1,17 +1,19 @@
 package com.ryan.demo.customview;
 
 import android.graphics.Color;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.ryan.androidbaselib.R;
 import com.ryan.baselib.util.AppUtils;
 import com.ryan.baselib.util.ListUtils;
 import com.ryan.common.data.ColorDataSource;
-import com.ryan.common.data.DataSource;
+import com.ryan.common.data.DataSourceKt;
 import com.ryan.common.wrapper.OnRecyclerItemClickListener;
 
 import java.util.List;
@@ -21,12 +23,13 @@ public class CustomViewAdapter extends RecyclerView.Adapter<CustomViewAdapter.Cu
     private OnRecyclerItemClickListener mListener;
 
     public CustomViewAdapter(OnRecyclerItemClickListener listener) {
-        this.mDatas = DataSource.getCustomViewTitles();
+        this.mDatas = DataSourceKt.getCustomViewTitles();
         this.mListener = listener;
     }
 
+    @NonNull
     @Override
-    public CustomViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public CustomViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(AppUtils.getContext()).inflate(R.layout.item_custom_fragment, parent, false);
         return new CustomViewHolder(view, mListener);
     }

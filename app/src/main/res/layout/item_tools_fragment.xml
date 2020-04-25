@@ -8,7 +8,7 @@
     app:cardElevation="@dimen/dp20">
 
     <Button
-        android:id="@+id/tv_item_utils"
+        android:id="@+id/tv_item_tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"

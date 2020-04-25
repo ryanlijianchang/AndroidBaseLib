@@ -2,7 +2,6 @@ package com.ryan.demo.customview.sub;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.text.Html;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
@@ -14,6 +13,8 @@ import android.view.animation.AnimationSet;
 import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import androidx.appcompat.widget.Toolbar;
 
 import com.ryan.androidbaselib.R;
 import com.ryan.baselib.util.BitmapUtils;

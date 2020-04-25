@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
 apply plugin: 'com.jfrog.bintray'
 apply plugin: 'com.github.dcendents.android-maven'
 
@@ -17,7 +19,7 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
     }
 
@@ -27,19 +29,23 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    buildToolsVersion = '28.0.3'
 
 }
 
 dependencies {
 
-    api rootProject.ext.dependencies["constraint-layout"]
+    api rootProject.ext.dependencies["constraintlayout"]
+    api rootProject.ext.dependencies["appcompat"]
+    api rootProject.ext.dependencies["activity"]
+    api rootProject.ext.dependencies["annotation"]
+    api rootProject.ext.dependencies["recyclerview"]
+    api rootProject.ext.dependencies["junit"]
+    api rootProject.ext.dependencies["espresso_core"]
+    api rootProject.ext.dependencies["cardview"]
+    api rootProject.ext.dependencies["material"]
+    api rootProject.ext.dependencies["viewpager"]
 
-    api rootProject.ext.dependencies["android-support-v4"]
-    api rootProject.ext.dependencies["android-support-appcompat-v7"]
-    api rootProject.ext.dependencies["android-support-annotations"]
-    api rootProject.ext.dependencies["android-support-recyclerview-v7"]
-    api rootProject.ext.dependencies["android-support-design"]
-    api rootProject.ext.dependencies["com.android.support:cardview-v7"]
 
 
     api (rootProject.ext.dependencies["fresco-sdk"]) {
@@ -55,6 +61,8 @@ dependencies {
     api (rootProject.ext.dependencies["fresco-webpsupport"]) {
         exclude group: 'com.nineoldandroids', module: 'library'
     }
+    implementation "androidx.core:core-ktx:+"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
 
 }
@@ -98,7 +106,7 @@ artifacts {
 Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
-version = "0.0.7"//发布的library的版本号,这个比较关键！！！
+version = "0.0.8"//发布的library的版本号,这个比较关键！！！
 
 
 def siteUrl = 'https://github.com/ryanlijianchang/AndroidBaseLib'      // 项目的主页(可随意，建议填library的github地址)
@@ -152,4 +160,7 @@ install {
             }
         }
     }
+}
+repositories {
+    mavenCentral()
 }

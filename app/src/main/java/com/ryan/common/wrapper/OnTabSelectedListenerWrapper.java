@@ -1,8 +1,9 @@
 package com.ryan.common.wrapper;
 
-import android.support.design.widget.TabLayout;
 
-public class OnTabSelectedListenerWrapper implements TabLayout.OnTabSelectedListener {
+import com.google.android.material.tabs.TabLayout;
+
+public abstract class OnTabSelectedListenerWrapper implements TabLayout.OnTabSelectedListener {
     @Override
     public void onTabSelected(TabLayout.Tab tab) {
 

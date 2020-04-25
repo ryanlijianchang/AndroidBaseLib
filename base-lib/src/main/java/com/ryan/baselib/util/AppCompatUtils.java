@@ -1,8 +1,9 @@
 package com.ryan.baselib.util;
 
 import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
 import android.view.ContextThemeWrapper;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class AppCompatUtils {
 

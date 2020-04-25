@@ -9,7 +9,7 @@
         android:id="@+id/toolbar_simple_scroll"
         layout="@layout/toolbar_common" />
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cl_simple_scroll_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -81,10 +81,10 @@
             app:layout_constraintLeft_toLeftOf="parent" />
 
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -108,5 +108,5 @@
             android:textColor="#e0f7fa"
             android:textSize="@dimen/sp13" />
 
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 </RelativeLayout>

@@ -7,12 +7,14 @@ import android.util.AttributeSet;
 import android.view.animation.LinearInterpolator;
 import android.widget.Scroller;
 
+import androidx.appcompat.widget.AppCompatTextView;
+
 /**
  * 非常规走马灯控件
  * 文案超过控件宽度，会让文案滚动到文案尾部，然后停下
  * @author RyanLee
  */
-public class SimpleScrollTextView extends android.support.v7.widget.AppCompatTextView {
+public class SimpleScrollTextView extends AppCompatTextView {
 
     private Scroller mScroller;
 
