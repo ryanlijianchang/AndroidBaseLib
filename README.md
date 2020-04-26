@@ -4,6 +4,18 @@
 
 - 1、支持kotlin
 - 2、增加截图工具类 ScreenShotListenManager
+```
+val mScreenShotListenManager = ScreenShotListenManager.newInstance(this)
+mScreenShotListenManager?.startListen { path ->
+    Log.i(TAG, "onScreenshotTaken path=$path")
+}
+
+// when unuse
+mScreenShotListenManager?.stopListen()
+```
+
+
+
 
 ### V0.0.8 ###
 
